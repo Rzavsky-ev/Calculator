@@ -1,4 +1,4 @@
-package servise;
+package pro.sky.Calculator.servise;
 
 public interface CalculatorService {
     String answerHello();

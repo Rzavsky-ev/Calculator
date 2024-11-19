@@ -1,4 +1,4 @@
-package servise;
+package pro.sky.Calculator.servise;
 
 import org.springframework.stereotype.Service;
 

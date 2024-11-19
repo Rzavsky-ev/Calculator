@@ -1,10 +1,10 @@
-package controller;
+package pro.sky.Calculator.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import servise.CalculatorService;
+import pro.sky.Calculator.servise.CalculatorService;
 
 @RestController
 @RequestMapping(path = "/calculator")
@@ -13,6 +13,7 @@ public class CalculatorController {
     private final CalculatorService calculatorService;
 
     public CalculatorController(CalculatorService calculatorService) {
+
         this.calculatorService = calculatorService;
     }
 
@@ -55,6 +56,5 @@ public class CalculatorController {
         }
         return num1 + "/" + num2 + "=" + calculatorService.answerDivide(num1, num2);
     }
-
-
 }
+
